@@ -5,13 +5,39 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <h1>Soy Itzel</h1>
   <body>
-    <h1>"holaaa"</h1>
-    <p>"mensaje para ver si ahora si entendi"</p>
-    <p>hola2gi</p>
-    <h2>nuevo cambio</h2>
-    <div id="root"></div>
+    <header class="containerH1">
+      <img class="logo" src="">
+      <div class="styleSearch">
+      <input type="search" placeholder="Buscar" id="search">
+    </div>
+    </header>
+    <section class="container">
+      <header class="header2">
+        <section class="logo2">
+          <!--img  src="">-->
+          <h1>CINE GHIBLI</h1>
+        </section>
+        <section class="menus">
+        <select name="filter" class="menuF">
+        <!-- FILTRADO-->
+          <option hidden selected>FILTRAR</option>
+          <option value="1">Titulo</option>
+          <option value="2">Personajes</option>
+          <option value="3">Año</option>
+        </select>
+        <select name="order"  class="menuO">
+          <!-- ORDENADO-->
+            <option hidden selected>ORDENAR</option>
+            <option value="1">A-Z</option>
+            <option value="2">Cronologicamente</option>
+            <option value="3">Mayor puntuacion</option>
+          </select>
+        </section>
+      </header>
+    <section class="root"></section>
+    </section>
+
     <script src="main.js" type="module"></script>
   </body>
 </html>
