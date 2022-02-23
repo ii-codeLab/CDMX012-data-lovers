@@ -1,10 +1,10 @@
 
 
 import data from './data/ghibli/ghibli.js';
-import generatorHtml from './generator.js';
+import generatorHtml from './data.js';
 //console.log(data.films[14].poster);
 
-const nodoRoot = document.getElementById("root");
+const nodoRoot = document.querySelector(".root");
 
 let todoHtml=""
 
