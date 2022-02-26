@@ -15,36 +15,30 @@ body {
     background: linear-gradient(to bottom right, rgb(135, 169, 207), white);
     
 }
+/*overflow-y: scroll;darle alto*/
 
-.containerH1{
+.header1{
     width: 100%;
-    height: 70px;
+    height: 110px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: flex-end;
     margin-bottom: 20px;
     border-bottom: 2px solid rgb(218, 158, 29);
     /*border-bottom: 2px solid rgb(0, 0, 0);*/
 }
-.styleSearch{
-    width: 30%;
-    height: 70%;
-    margin-top: 15px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
+
+.containerLogo{
+    width: 50%;
+    height: 110px;
 }
-#search{
-    border-radius: 30px;
-    height: 25px;
-    width: 250px;
-    padding: 20px;
-    background: linear-gradient(to bottom right, rgb(250, 248, 135), white);
-    border: none;
+
+.containerLogo img{
+    width: 100px;
 }
-#search:hover{
-    border: 3px solid rgb(218, 158, 29);    
-}
-.header2{
+
+
+.navigation{
     width: 100%;
     height: 70px;
     margin-bottom: 20px;
@@ -53,24 +47,41 @@ body {
     justify-content: flex-end;
     color: rgb(77, 48, 5);
 }
-h1{
-    font-size: 30px;
-    text-align: justify;
-    padding-bottom: 10px;
+.menues{
+    width: 50%;
+    height: 70px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.filter{
+    display:none;
+}
+.search{
+    border-radius: 30px;
+    height: 25px;
+    width: 140px;
+    padding: 20px;
+    background: linear-gradient(to bottom right, rgb(250, 229, 135), white);
+    border: none;
+}
+.search:hover{
+    border: 3px solid rgb(218, 158, 29);    
 }
 .menuF{
     border-radius: 30px;
     height: 30px;
-    width: 200px;
+    width: 140px;
     border: 2px solid rgb(218, 158, 29);
     color: rgb(77, 48, 5);
 }
 
-
 .menuO{
     border-radius: 30px;
     height: 30px;
-    width: 200px;
+    width: 140px;
     border: 2px solid rgb(218, 158, 29);
     color: rgb(77, 48, 5);    
 }
@@ -99,7 +110,7 @@ h1{
     background-color: rgba(250, 250, 250, 0.918);
 
     color: rgb(77, 48, 5);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Work Sans', sans-serif;
     font-size: small;
     text-align: center;
     flex: none;
@@ -109,5 +120,6 @@ h1{
 
 .item img{
     width: 100%;
+    height: 45Vh;
     border-radius: 10px;
 }
