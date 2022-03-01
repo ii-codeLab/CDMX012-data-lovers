@@ -19,17 +19,22 @@ let todoCharacters=""
 
 for (let index = 0; index < movies.length; index++) {
    allCharacters.push(movies[index].people);
-   console.log(allCharacters);
-}
+} 
+console.log(allCharacters);
+
+allCharacters.forEach(character=>{
+  character.forEach(element=>{
+    todoCharacters += characterGenerator(element)})
+   
+})
+nodoPeople.innerHTML=todoCharacters;
+
 movies.forEach(card=>{
   todoHtml += generatorHtml(card) 
 })
 nodoRoot.innerHTML= todoHtml;
 
-allCharacters.forEach(character=>{
-  todoCharacters += characterGenerator(character) 
-})
-nodoPeople.innerHTML=todoCharacters;
+
 /*characters.forEach(card=>{
   todoCharacters += characterGenerator(character) 
 })*/

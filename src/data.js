@@ -5,10 +5,12 @@ export default function generatorHtml(card){
   <h3>${card.rt_score}</h3></section>`
 }
  
-export function characterGenerator (character){
-  return `<section class="item"><img src="${character.img}">
-  <h2>${character.name}(${character.gender})</h2>
-  <h3>${character.specie}</h3></section>`
+
+export function characterGenerator(element){
+  //console.log(character);
+    return `<section class="item"><img src="${element.img}">
+  <h2>${element.name}(${element.gender})</h2>
+  <h3>${element.specie}</h3></section>`
 }
 
 export function searchFilters(input,selector){
