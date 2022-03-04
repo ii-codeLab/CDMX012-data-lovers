@@ -6,27 +6,31 @@ manejadores de eventos (_event listeners_ o _event handlers_), ....*/
 
 import data from './data/ghibli/ghibli.js';
 import generatorHtml from './data.js';
-import {searchFilters} from './data.js';
 import {characterGenerator} from './data.js';
-//import { sortData } from './data.js';
 import { sortData } from './data.js';
+import{filterFilms} from './data.js';
 
+
+//---------------VARIABLES----------------------------------------------------------
+//----------llamando input search------------
+const search=document.querySelector(".search");
 
 // Variables para ordenar
 const nodoMenuO = document.querySelector(".menuO");
-//       Variables para mostrar películas
-const nodoRoot = document.querySelector(".root");
-let todoHtml=""
 
-//       Variables para mostrar personajes
+//----------------------Variables para mostrar películas----------------------------
+const nodoRoot = document.querySelector(".root");
+let todoHtml=[];      //cambiamos de string a array
+
+//----------------------Variables para mostrar personajes----------------------------
 const nodoPeople=document.querySelector(".people");
 const movies= data.films 
 const allCharacters=[];
 let todoCharacters=""
 
-//console.log(movies.sort(sortData));
-//const currentMovies=movies 
+//-----------------------INTERACCIÓN-------------------------------------------------
 
+//------------------------PELÍCULAS--------------------------------------------------
 //------------Va almacenando las tarjetas de cada película---------------------------
 movies.forEach(card=>{
   todoHtml += generatorHtml(card) 
@@ -34,19 +38,11 @@ movies.forEach(card=>{
 //------------Muestra las tarjetas de las películas en HTML---------------------------
 nodoRoot.innerHTML= todoHtml;
 
-nodoMenuO.addEventListener("change",(e)=>{
-  let sortFilms = sortData(e.target.value,movies);
-  let htmlSort = ""
-  sortFilms.forEach(oneFilm =>{
-    htmlSort += generatorHtml(oneFilm)
-  })
-  nodoRoot.innerHTML = htmlSort;
-})
+//----------------------PERSONAJES----------------------------------------------------
 //----------Crea un arreglo con todos los personajes de todas las películas-----------
 for (let index = 0; index < movies.length; index++) {
    allCharacters.push(movies[index].people);
 } 
-//console.log(allCharacters);
 
 /* ---------Primero accede al arreglo de personajes de cada peícula y después aaccede a 
 cada uno de los personajes por película----------------------------------------------*/
@@ -56,8 +52,27 @@ allCharacters.forEach(character=>{
 })
 
 
-//------------Muestra las tarjetas de los personajes en HTML---------------------------
-nodoPeople.innerHTML=todoCharacters;
+//------------------------------Filtrado----------------------------------------------
+search.addEventListener("keyup",(e) => {
+  let searchFilm=filterFilms(e.target.value.toLowerCase(),movies);
+  let htmlSearch=""
+  searchFilm.forEach(everyFilm =>{
+      htmlSearch+=generatorHtml(everyFilm)
+     
+  })
+ nodoRoot.innerHTML=htmlSearch;
+  })
 
-//------Llama a la función para filtrar coincidencias dentro de la clase "item"--------
-searchFilters(".search",".item")
+//-------------------------------Ordenado---------------------------------------------
+nodoMenuO.addEventListener("change",(e)=>{
+  let sortFilms = sortData(e.target.value,movies);
+  let htmlSort = ""
+  sortFilms.forEach(oneFilm =>{
+    htmlSort += generatorHtml(oneFilm)
+  })
+  nodoRoot.innerHTML = htmlSort;
+})
+
+//------------Muestra las tarjetas de los personajes en HTML---------------------------
+//nodoPeople.innerHTML=todoCharacters;
+
