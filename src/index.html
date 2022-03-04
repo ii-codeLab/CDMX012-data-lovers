@@ -3,13 +3,44 @@
   <head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>"holaaa"</h1>
-    <p>"mensaje para ver si ahora si entendi"</p>
-    <p>hola2gi</p>
-    <div id="root"></div>
+          <!--ENCABEZADO-->
+    <header class="header1">
+      <section class="containerLogo">
+        <img src="./IMG/logo.png">
+      </section>
+    </header>
+     <!--MENÚS DE NAVEGACIÓN-->
+      <section class="navigation">
+        <nav class="menues">
+        <!--BUSCADOR-->
+            <input type="search" placeholder="Buscar" class="search">
+          <!-- FILTRADO-->
+          <select name="filter" class="menuF">
+            <option hidden selected>FILTRAR</option>
+            <option value="1">Año</option>
+            <option value="2">Director</option>
+            <option value="3">Productor</option>
+          </select>
+          <!-- ORDENADO-->
+          <select name="order"  class="menuO">
+            <option hidden selected>ORDENAR</option>
+            <option value="az">A-Z</option>
+            <option value="za">Z-A</option>
+          </select>
+        </nav>
+      </section>
+       <!-- CONTENEDOR DE TARJETAS-->
+    <section class="container">
+      <section class="root"></section>
+      <section class="people"></section>
+    </section>
+
     <script src="main.js" type="module"></script>
   </body>
 </html>
