@@ -121,6 +121,10 @@ flex-direction: column;
     border-radius: 10px;
 }
 
+.score img{
+    width: 12%;
+    height: 4Vh;
+}
 .people{
     display: flex;
     flex-wrap: wrap;
