@@ -26,7 +26,7 @@ const nodoRoot = document.querySelector(".root");
 let todoHtml=[];      //cambiamos de string a array
 
 //----------------------Variables para mostrar personajes----------------------------
-const nodoPeople=document.querySelector(".people");
+const btnCharacters = document.querySelector(".btnCharacters");
 const movies= data.films 
 //let currentMovies = "";
 const allCharacters=[];
@@ -40,7 +40,7 @@ movies.forEach(card=>{
 })
 //console.log(todoHtml);
 //------------Muestra las tarjetas de las películas en HTML---------------------------
-nodoRoot.innerHTML= todoHtml;
+nodoRoot.innerHTML = todoHtml;
 
 //----------------------PERSONAJES----------------------------------------------------
 //----------Crea un arreglo con todos los personajes de todas las películas-----------
@@ -49,18 +49,18 @@ for (let index = 0; index < movies.length; index++) {
 } 
 //console.log(allCharacters);
 
-/*let calcifers = "";
-for (let i= 0; i < movies.length; i++) {
-  calcifers.push(movies[i].rt_score);
-} 
-console.log(calcifers);*/
 
 /* ---------Primero accede al arreglo de personajes de cada peícula y después aaccede a 
 cada uno de los personajes por película----------------------------------------------*/
-allCharacters.forEach(character=>{
+btnCharacters.addEventListener("click", () =>{
+  nodoRoot.innerHTML=""
+  allCharacters.forEach(character=>{
   character.forEach(element=>{
     todoCharacters += characterGenerator(element)})
 })
+nodoRoot.innerHTML = todoCharacters;
+})
+
 
 //------------------------------Buscador----------------------------------------------
 search.addEventListener("keyup",(e) => {
