@@ -1,23 +1,23 @@
-import { example, anotherExample } from '../src/data.js';
+import { filterDirector, filterFilms } from '../src/data.js';
 
 
-describe('example', () => {
+describe('filterDirector', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof filterDirector).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('returns `filterDirector`', () => {
+    expect(sortData()).toBe('sortData');
   });
 });
 
 
-describe('anotherExample', () => {
+describe('filterFilms', () => {
   it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+    expect(typeof filterFilms).toBe('function');
   });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it('returns `filterFilms`', () => {
+    expect(filterFilms()).toBe('OMG');
   });
 });
