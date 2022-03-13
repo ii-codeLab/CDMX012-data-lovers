@@ -5,8 +5,8 @@ interacción con el DOM. Operaciones como creación de nodos, registro de
 manejadores de eventos (_event listeners_ o _event handlers_), ....*/
 
 import data from './data/ghibli/ghibli.js';
-import generatorHtml from './data.js';
-import {characterGenerator} from './data.js';
+import {generatorHtml} from './generator.js';
+import {characterGenerator} from './generator.js';
 import { sortData } from './data.js';
 import{filterFilms} from './data.js';
 import { filterDirector } from './data.js';
