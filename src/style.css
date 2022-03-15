@@ -47,8 +47,9 @@ body {
     justify-content: flex-end;
     color: rgb(77, 48, 5);
 }
+
 .menues{
-    width: 50%;
+    width: 70%;
     height: 70px;
     display: flex;
     flex-direction: row-reverse;
@@ -56,9 +57,6 @@ body {
     justify-content: space-around;
 }
 
-.filter{
-    display:none;
-}
 .search{
     border-radius: 30px;
     height: 25px;
@@ -85,6 +83,15 @@ body {
     border: 2px solid rgb(218, 158, 29);
     color: rgb(77, 48, 5);    
 }
+
+.btnCharacters{
+    border-radius: 30px;
+    height: 30px;
+    width: 140px;
+    border: 2px solid rgb(218, 158, 29);
+    color: rgb(77, 48, 5);  
+}
+
 .container{
 width: 900px;
 height: auto;
@@ -121,6 +128,10 @@ flex-direction: column;
     border-radius: 10px;
 }
 
+.score img{
+    width: 12%;
+    height: 4Vh;
+}
 .people{
     display: flex;
     flex-wrap: wrap;
