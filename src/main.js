@@ -75,7 +75,6 @@ search.addEventListener("keyup",(e) => {
  //------------------------------Filtrado por director--------------------------------
  nodoMenuF.addEventListener("change",(e)=>{
   let filterD = filterDirector(e.target.value,movies)
-  console.log(e.target.value);
   let directors = "";
   filterD.forEach(oneFilm =>{
     directors += generatorHtml(oneFilm);

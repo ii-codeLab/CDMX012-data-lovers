@@ -40,7 +40,7 @@ export function sortData(opcion, data){
     const titleA = a.title.toLowerCase();
     const titleB = b.title.toLowerCase();
     if(opcion=="az"){
-      console.log(opcion=="az");
+    
       if (titleA > titleB) {
         
         return 1;
