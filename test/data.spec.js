@@ -9,9 +9,9 @@ describe('que sortData sea una funcion', () => {
 
   it('Ordenamiento az', () => {
     const dataExample=[
-      {"title": "Castle in the Sky"},
       {"title": "The Wind Rises"},
       {"title": "The Tale of the Princess Kaguya"},
+      {"title": "Castle in the Sky"}
     ]
     const response=[
       {"title": "Castle in the Sky"},
@@ -23,10 +23,10 @@ describe('que sortData sea una funcion', () => {
 
 
 it('Ordenamiento za', () => {
-  const dataExample=[{
-    "title": "Castle in the Sky"},
+  const dataExample=[
     {"title": "The Wind Rises"},
-    {"title": "The Tale of the Princess Kaguya"},
+    {"title": "Castle in the Sky"},
+    {"title": "The Tale of the Princess Kaguya"}
   ]
   const response=[
   {"title": "The Wind Rises"},
