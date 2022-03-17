@@ -14,7 +14,8 @@ import { filterDirector } from './data.js';
 //---------------VARIABLES----------------------------------------------------------
 //----------llamando input search------------------
 const search=document.querySelector(".search");
-
+// menues
+const nodoNav = document.querySelector(".menues");
 //----------Variables para ordenar-----------------
 const nodoMenuO = document.querySelector(".menuO");
 
@@ -23,24 +24,30 @@ const nodoMenuF = document.querySelector(".menuF");
 
 //----------------------Variables para mostrar películas----------------------------
 const nodoRoot = document.querySelector(".root");
+const btnMovies = document.querySelector(".btnMovies")
 let todoHtml=[];      //cambiamos de string a array
+//let allDescriptions = ""
 
 //----------------------Variables para mostrar personajes----------------------------
 const btnCharacters = document.querySelector(".btnCharacters");
 const movies= data.films 
-//let currentMovies = "";
 const allCharacters=[];
 let todoCharacters="";
 //-----------------------*INTERACCIÓN*-------------------------------------------------
 
 //------------------------PELÍCULAS--------------------------------------------------
 //------------Va almacenando las tarjetas de cada película---------------------------
-movies.forEach(card=>{
-  todoHtml += generatorHtml(card) 
+btnMovies.addEventListener("click", () =>{ 
+  nodoMenuF.style.display="";
+  nodoMenuO.style.display="";
+  nodoRoot.innerHTML = ""
+  movies.forEach(card=>{
+  todoHtml += generatorHtml(card)
 })
-//console.log(todoHtml);
-//------------Muestra las tarjetas de las películas en HTML---------------------------
 nodoRoot.innerHTML = todoHtml;
+})
+//------------Muestra las tarjetas de las películas en HTML---------------------------
+
 
 //----------------------PERSONAJES----------------------------------------------------
 //----------Crea un arreglo con todos los personajes de todas las películas-----------
@@ -53,6 +60,8 @@ for (let index = 0; index < movies.length; index++) {
 /* ---------Primero accede al arreglo de personajes de cada peícula y después aaccede a 
 cada uno de los personajes por película----------------------------------------------*/
 btnCharacters.addEventListener("click", () =>{
+  nodoMenuF.style.display="none";
+  nodoMenuO.style.display="none";
   nodoRoot.innerHTML=""
   allCharacters.forEach(character=>{
   character.forEach(element=>{
@@ -60,7 +69,6 @@ btnCharacters.addEventListener("click", () =>{
 })
 nodoRoot.innerHTML = todoCharacters;
 })
-
 
 //------------------------------Buscador----------------------------------------------
 search.addEventListener("keyup",(e) => {
@@ -82,7 +90,7 @@ search.addEventListener("keyup",(e) => {
   nodoRoot.innerHTML = directors;
 })
 
-//-------------------------------Ordenado---------------------------------------------
+//-------------------------------Ordenado películas---------------------------------------------
 nodoMenuO.addEventListener("change",(e)=>{
   let sortFilms = sortData(e.target.value, movies);
   let htmlSort = ""
