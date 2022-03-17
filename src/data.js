@@ -1,19 +1,4 @@
 
-/*Te recomendamos que este archivo contenga toda la funcionalidad que corresponda
-a obtener, procesar y manipular datos (tus funciones). Por ejemplo:
-
-* `filter(, condition)`: esta función `filter` o filtrar recibiría la
-  , y nos retornaría aquellos datos que sí cumplan con la condición.*/
-
-
-
-//------------------cálculo agregado-------------------------------------------------
-// Mostrar cantidad de calcifers según el puntaje de cada película
-// Definir rangos para equivalencias a calcifers
-// Hacer una función que que muestre la equivalencia entre el puntaje y nuestro rango establecido
-// Pintar en la tarjeta las imégenes que representan la equivalencia
-
-// función que arroje el número de calcifers a los que corresponde la puntuación
 export function comparador(puntaje){
   if(puntaje > 94){
       return 5;
@@ -27,11 +12,6 @@ export function comparador(puntaje){
     return 1;
   }
 }
-
-
-
-
-
 
 //--------------------Ordenado por título de A-Z y Z-A---------------------------------
 export function sortData(opcion, data){
@@ -61,6 +41,7 @@ export function sortData(opcion, data){
     }
   })
 }
+
 
 //-------------------Buscador películas------------------------------------------------
    export function filterFilms(word,data) {

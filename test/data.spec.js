@@ -14,6 +14,7 @@ describe('que sortData sea una funcion', () => {
       {"title": "The Wind Rises"},
       {"title": "The Tale of the Princess Kaguya"},
       {"title": "Kiki's Delivery Service"}
+
     ]
     const response=[
       {"title": "Castle in the Sky"},
@@ -33,6 +34,7 @@ it('Ordenamiento za', () => {
     {"title": "The Wind Rises"},
     {"title": "The Tale of the Princess Kaguya"},
     {"title": "Kiki's Delivery Service"}
+
   ]
   const response=[
     {"title": "Castle in the Sky"},
