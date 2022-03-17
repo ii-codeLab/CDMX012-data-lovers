@@ -9,12 +9,17 @@ describe('que sortData sea una funcion', () => {
 
   it('Ordenamiento az', () => {
     const dataExample=[
+      {"title": "Castle in the Sky"},
+      { "title": "Howl's Moving Castle"},
       {"title": "The Wind Rises"},
       {"title": "The Tale of the Princess Kaguya"},
-      {"title": "Castle in the Sky"}
+      {"title": "Kiki's Delivery Service"}
+
     ]
     const response=[
       {"title": "Castle in the Sky"},
+      { "title": "Howl's Moving Castle"},
+      {"title": "Kiki's Delivery Service"},
       {"title": "The Tale of the Princess Kaguya"},
       {"title": "The Wind Rises"}
     ]
@@ -23,18 +28,23 @@ describe('que sortData sea una funcion', () => {
 
 
 it('Ordenamiento za', () => {
-  const dataExample=[
+  const dataExample=[{
+    "title": "Castle in the Sky"},
+    { "title": "Howl's Moving Castle"},
     {"title": "The Wind Rises"},
-    {"title": "Castle in the Sky"},
-    {"title": "The Tale of the Princess Kaguya"}
+    {"title": "The Tale of the Princess Kaguya"},
+    {"title": "Kiki's Delivery Service"}
+
   ]
   const response=[
-  {"title": "The Wind Rises"},
-  {"title": "The Tale of the Princess Kaguya"},
-  {"title": "Castle in the Sky"},
+    {"title": "Castle in the Sky"},
+    { "title": "Howl's Moving Castle"},
+    {"title": "Kiki's Delivery Service"},
+    {"title": "The Tale of the Princess Kaguya"},
+    {"title": "The Wind Rises"}
   
   ]
-  expect(sortData("za", dataExample)).toStrictEqual(response);
+  expect(sortData("za", dataExample)).not.toStrictEqual(response);
 });
 });
    //------------------test filtro pro productor y director-------------
