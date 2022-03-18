@@ -88,19 +88,22 @@ Con la informacion recopilada luego de aplicar un orden y priorizacion se destac
 
 ## 3. Diseño de interfaz
       
-       El diseño de la interfaz se hizo de acuerdo a la informacion y sugerencias de nuestros usuarios, en las cuales expresaban cuestiones como la sensacion de sobresaturacion visual 
-       que experimentaban al tener fondos con multiples formas y colores al mismo tiempo que las tarjetas con posters sobre ello.
+       El diseño de la interfaz se hizo de acuerdo a la informacion y sugerencias de nuestros usuarios, en las cuales expresaban 
+       cuestiones como la sensacion de sobresaturacion visual que experimentaban al tener fondos con multiples formas y colores
+       al mismo tiempo que las tarjetas con posters sobre ello.
 
-       Tomamos tambien en cuenta le necesidad de nuestros usuarios de poder identificar a primera vista los botones y menues y que hacen cada uno ,teniendo como consecuencia
-       una menor curva de aprendizaje necesaria en el usuario a la hora de manejar la interfaz.
+       Tomamos tambien en cuenta le necesidad de nuestros usuarios de poder identificar a primera vista los botones y menues
+       ademas de que hacen cada uno ,teniendo como consecuencia una menor curva de aprendizaje necesaria en el usuario
+       a la hora de manejar la interfaz.
 
-       Nuestra interfaz parte dede ser visualmente sencilla y armoniosa al mismo tiempo busca redirigir y enfocar al usuario hacia el contenido principal asi como hacia el area de interaccion.
+       Nuestra interfaz parte dede ser visualmente sencilla y armoniosa al mismo tiempo busca redirigir y 
+       enfocar al usuario hacia el contenido principal asi como hacia el area de interaccion.
 
 
 ### 3.1. Prototipo de baja fidelidad
 
 Al momento de contrastar ideas para crear nuestra interfaz,ambas hicimos algunos bocetos en papel y en herramientas como power point y paint para expresar como visualizabamos nuestra pagina y encontrar puntos de acuerdo.
-![boceto1](./src/readme-img/sketch.png)
+![boceto1](./src/readme-img/bocetoPapel.png)
 ![boceto2](./src/IMG/sketch%202.png)
 ![prototipo1](./src/readme-img/BOCETO%20GHIBLI.png)
 ![prototipo2](./src/readme-img/boceto1.png)
