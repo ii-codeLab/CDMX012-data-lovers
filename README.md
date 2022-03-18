@@ -103,6 +103,7 @@ Con la informacion recopilada luego de aplicar un orden y priorizacion se destac
 ### 3.1. Prototipo de baja fidelidad
 
 Al momento de contrastar ideas para crear nuestra interfaz,ambas hicimos algunos bocetos en papel y en herramientas como power point y paint para expresar como visualizabamos nuestra pagina y encontrar puntos de acuerdo.
+
 ![boceto1](./src/readme-img/bocetoPapel.png)
 ![boceto2](./src/readme-img/sketch.png)
 ![prototipo1](./src/readme-img/BOCETO%20GHIBLI.png)
