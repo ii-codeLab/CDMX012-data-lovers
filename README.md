@@ -88,10 +88,11 @@ Con la informacion recopilada luego de aplicar un orden y priorizacion se destac
 
 ## 3. Diseño de interfaz
       
-       El diseño de la interfaz se hizo de acuerdo a la informacion y sugerencias de nuestros usuarios, en las cuales expresaban cuestiones como
-       la sensacion de sobresaturacion visual que experimentaban al tener fondos con multiples formas y colores al mismo tiempo que las tarjetas con posters sobre ello.
+       El diseño de la interfaz se hizo de acuerdo a la informacion y sugerencias de nuestros usuarios, en las cuales expresaban cuestiones como la sensacion de sobresaturacion visual 
+       que experimentaban al tener fondos con multiples formas y colores al mismo tiempo que las tarjetas con posters sobre ello.
 
-       Tomamos tambien en cuenta le necesidad de nuestros usuarios de poder identificar a primera vista los botones y menues y que hacen cada uno ,teniendo como consecuencia una menor curva de aprendizaje necesaria en el usuario a la hora de manejar la interfaz.
+       Tomamos tambien en cuenta le necesidad de nuestros usuarios de poder identificar a primera vista los botones y menues y que hacen cada uno ,teniendo como consecuencia
+       una menor curva de aprendizaje necesaria en el usuario a la hora de manejar la interfaz.
 
        Nuestra interfaz parte dede ser visualmente sencilla y armoniosa al mismo tiempo busca redirigir y enfocar al usuario hacia el contenido principal asi como hacia el area de interaccion.
 
@@ -118,20 +119,26 @@ Se realizo tambien un prototipo ejemplificando el flujo que queriamos tuviera nu
 
 #### 4. Interfaz de Usuario (HTML/CSS/JS)
 
-    Buscando que la interacción con el DOM fuera sencilla y eficiente descidimos precindir de usar selectores por Id y nos enfocamos en selectore de clase que aunque son menos especificos permiten maneja el conjunto de datos de acuerdo a un mismo estilo en CSS sin tener conflictos de especificidad.
+    Buscando que la interacción con el DOM fuera sencilla y eficiente descidimos
+     precindir de usar selectores por Id y nos enfocamos en selectore de clase 
+     que aunque son menosespecificos permiten maneja el conjunto de datos 
+     de acuerdo a  un mismo estilo en CSS sin tener conflictos de especificidad.
 
-    Tambien consideramos dividir la ejecucion de nuestras funciones JS en tres archivos:
+    Tambien consideramos dividir la ejecucion de nuestras funciones JS
+     en tres archivos:
     
     main.js: Encargado de las interacciones con el DOM.
 
-    generator.js: Encargado de generar HTML a partir de iterar la data y convertirlo a HTML
+    generator.js: Encargado de generar HTML a partir de iterar la data y
+     convertirlo a HTML
 
 
 #### 5. Pruebas unitarias
 
 Con respecto a las pruebas unitarias se realizaron 15 para cubrir 4 funciones:
 
-Ordenado(sortData):La funcion constituye en una serie de condicionales vinculados a un evento "change" desde los valores de 2 opciones en un input de tipo select:
+Ordenado(sortData):La funcion constituye en una serie de condicionales vinculados a un evento "change" desde los valores de 2 opciones
+en un input de tipo select:
         
            De la A-Z
 
@@ -139,13 +146,15 @@ Ordenado(sortData):La funcion constituye en una serie de condicionales vinculado
 
  En el ultimo caso hubo una linea que no fue cubierta por el test.
 
- Buscador(filterFilms):Esta funcion se hizo en base a un evento "keyup" dentro de un input de tipo texto,que a su vez se vinculaba con una funcion que comparaba el valor con coincidencias dentro de nuestra data en:
+ Buscador(filterFilms):Esta funcion se hizo en base a un evento "keyup" dentro de un input de tipo texto,que a su vez se vinculaba con
+ una funcion que comparaba el valor con coincidencias dentro de nuestra data en:
 
             Titulo 
 
             Fecha de lanzamiento 
 
-Filtro(filterDirector):Esta funcion tambien esta vinculada a un evento "change" en un input select,pero compara el valor de la opcion con coincidencias dentro nuestra data en:
+Filtro(filterDirector):Esta funcion tambien esta vinculada a un evento "change" en un input select,pero compara el valor de la opcion con
+coincidencias dentro nuestra data en:
 
             Director
 
