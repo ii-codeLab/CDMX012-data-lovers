@@ -4,7 +4,7 @@
 
 * [1. Introducción](#1-Introducción)
 * [2. Recopilando información](#2-recopilando-información)
-* [3. Diseño de interfaz](#3- Diseño-de-interfaz)
+* [3. Diseño de interfaz](#3-Diseño-de-interfaz)
 * [4. Interfaz de Usuario (HTML/CSS/JS)](#4-Implementación-de-la-Interfaz-de-Usuario-(HTML/CSS/JS))
 * [5.  Pruebas unitarias](#5-Pruebas-unitarias)
 
