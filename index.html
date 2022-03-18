@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Data Lovers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+          <!--ENCABEZADO-->
+    <header class="header1">
+      <section class="containerLogo">
+        <img src="./IMG/logo.png">
+      </section>
+    </header>
+     <!--MENÚS DE NAVEGACIÓN-->
+      <section class="navigation">
+        <nav class="menues">
+        <!--BUSCADOR-->
+            <input type="search" placeholder="Buscar" class="search">
+          <!-- FILTRADO-->
+          <select name="filter" class="menuF">
+            <option hidden selected>FILTRAR</option>
+              <optgroup label ="Director">
+                  <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+                  <option value="Isao Takahata">Isao Takahata</option>
+                  <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+                  <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+                  <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+                  <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+              </optgroup>
+              <optgroup label ="Productor">
+                <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+                <option value="Isao Takahata">Isao Takahata</option>
+                <option value="Toru Hara">Toru Hara</option>
+                <option value="Toshio Suzuki">Toshio Suzuki</option>
+                <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+              </optgroup>
+          </select>
+          <!-- ORDENADO-->
+          <select name="order"  class="menuO">
+            <option hidden selected>ORDENAR</option>
+            <option value="az">A-Z</option>
+            <option value="za">Z-A</option>
+          </select>
+          <input type="button" value = "PERSONAJES" class="btnCharacters">
+          <input type="button" value = "PELÍCULAS" class="btnMovies">
+        </nav>
+      </section>
+       <!-- CONTENEDOR DE TARJETAS-->
+    <section class="container">
+      <section class="root">
+        <img src="./IMG/portada.png">
+      </section>
+    </section>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
