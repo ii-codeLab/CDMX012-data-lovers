@@ -4,7 +4,11 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     /*display: flex;
+=======
+   /* display: flex;
+>>>>>>> 36ca49b4de8291a220be495190bf58ab6d4d9b22
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;*/
@@ -98,7 +102,11 @@ body {
 }
 
 .container{
+<<<<<<< HEAD
 /*width: 100%;*/
+=======
+width: 100%;
+>>>>>>> 36ca49b4de8291a220be495190bf58ab6d4d9b22
 height: auto;
 display: flex;
 flex-direction: column;
