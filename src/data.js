@@ -1,12 +1,12 @@
 
-export function comparador(puntaje){
-  if(puntaje > 94){
+export function comparator(score){
+  if(score > 94){
       return 5;
-  }else if(puntaje <= 94 && puntaje > 84){
+  }else if(score <= 94 && score > 84){
     return 4;
-  }else if(puntaje <= 84 && puntaje > 74){
+  }else if(score <= 84 && score > 74){
     return 3;
-  }else if(puntaje <= 74 && puntaje > 40){
+  }else if(score <= 74 && score > 40){
     return 2;
   }else{
     return 1;
@@ -14,12 +14,12 @@ export function comparador(puntaje){
 }
 
 //--------------------Ordenado por título de A-Z y Z-A---------------------------------
-export function sortData(opcion, data){
+export function sortData(option, data){
   
   return data.sort(function(a,b){
     const titleA = a.title.toLowerCase();
     const titleB = b.title.toLowerCase();
-    if(opcion=="az"){
+    if(option=="az"){
     
       if (titleA > titleB) {
         

@@ -15,7 +15,7 @@ import { filterDirector } from './data.js';
 //----------llamando input search------------------
 const search=document.querySelector(".search");
 // menues
-const nodoNav = document.querySelector(".menues");
+
 //----------Variables para ordenar-----------------
 const nodoMenuO = document.querySelector(".menuO");
 
@@ -25,14 +25,15 @@ const nodoMenuF = document.querySelector(".menuF");
 //----------------------Variables para mostrar películas----------------------------
 const nodoRoot = document.querySelector(".root");
 const btnMovies = document.querySelector(".btnMovies")
-let todoHtml=[];      //cambiamos de string a array
+let allHtml=[];      //cambiamos de string a array
 //let allDescriptions = ""
 
 //----------------------Variables para mostrar personajes----------------------------
 const btnCharacters = document.querySelector(".btnCharacters");
 const movies= data.films 
 const allCharacters=[];
-let todoCharacters="";
+let totalCharacters="";
+
 //-----------------------*INTERACCIÓN*-------------------------------------------------
 
 //------------------------PELÍCULAS--------------------------------------------------
@@ -42,9 +43,9 @@ btnMovies.addEventListener("click", () =>{
   nodoMenuO.style.display="";
   nodoRoot.innerHTML = ""
   movies.forEach(card=>{
-  todoHtml += generatorHtml(card)
+  allHtml += generatorHtml(card)
 })
-nodoRoot.innerHTML = todoHtml;
+nodoRoot.innerHTML = allHtml;
 })
 //------------Muestra las tarjetas de las películas en HTML---------------------------
 
@@ -54,7 +55,7 @@ nodoRoot.innerHTML = todoHtml;
 for (let index = 0; index < movies.length; index++) {
    allCharacters.push(movies[index].people);
 } 
-//console.log(allCharacters);
+
 
 
 /* ---------Primero accede al arreglo de personajes de cada peícula y después aaccede a 
@@ -65,9 +66,9 @@ btnCharacters.addEventListener("click", () =>{
   nodoRoot.innerHTML=""
   allCharacters.forEach(character=>{
   character.forEach(element=>{
-    todoCharacters += characterGenerator(element)})
+    totalCharacters += characterGenerator(element)})
 })
-nodoRoot.innerHTML = todoCharacters;
+nodoRoot.innerHTML = totalCharacters;
 })
 
 //------------------------------Buscador----------------------------------------------
@@ -100,6 +101,5 @@ nodoMenuO.addEventListener("change",(e)=>{
   nodoRoot.innerHTML = htmlSort;
 })
 
-//------------Muestra las tarjetas de los personajes en HTML---------------------------
-//nodoPeople.innerHTML=todoCharacters;
+
 

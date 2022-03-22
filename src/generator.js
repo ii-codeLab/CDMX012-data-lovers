@@ -1,9 +1,9 @@
-import {comparador} from './data.js';
+import {comparator} from './data.js';
 //--------------------crea una tarjeta por película---------------------------------
 export  function generatorHtml(card){
-    let numeroCalcifers = comparador(card.rt_score);
-    const imagen= `<img src = "./IMG/calcifer.png">`;
-    let calcifers = `${(imagen).repeat(numeroCalcifers)}`;
+    let calciferNumber = comparator(card.rt_score);
+    const picture= `<img src = "./IMG/calcifer.png">`;
+    let calcifers = `${(picture).repeat(calciferNumber)}`;
     return `<section class="item">
                       <img src="${card.poster}">
                       <h2>${card.title}(${card.release_date})</h2>
@@ -14,12 +14,6 @@ export  function generatorHtml(card){
                 </section>`        
 }
 
-/*export  function generatorDescription(film){
-  //console.log(film.description);
-    return `<section class = "item">
-        <p>${film.description}</p>
-      </section>`
-}*/
   //--------------------crea una tarjeta por personaje---------------------------------
 export function characterGenerator(element){
     return `<section class="item"><img src="${element.img}">
