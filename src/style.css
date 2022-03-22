@@ -4,10 +4,10 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    display: flex;
+   /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-around;*/
     box-sizing: border-box;
     background: linear-gradient(to bottom right, rgb(135, 169, 207), white);
 }
@@ -98,7 +98,7 @@ body {
 }
 
 .container{
-width: 900px;
+width: 100%;
 height: auto;
 display: flex;
 flex-direction: column;
