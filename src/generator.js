@@ -4,14 +4,19 @@ export  function generatorHtml(card){
     let numeroCalcifers = comparador(card.rt_score);
     const imagen= `<img src = "./IMG/calcifer.png">`;
     let calcifers = `${(imagen).repeat(numeroCalcifers)}`;
-    return `<section class="item">
+    return `<section class="cardContainer">
+              <section class="item">
                       <img src="${card.poster}">
                       <h2>${card.title}(${card.release_date})</h2>
                        <section class="score">
                          ${calcifers}
                         </section>
                           <h3>${card.rt_score}</h3>
-                </section>`        
+              </section>
+              <section class="description">
+                <p>${card.description}</p>
+              </section>
+            </section>`        
 }
 
 /*export  function generatorDescription(film){

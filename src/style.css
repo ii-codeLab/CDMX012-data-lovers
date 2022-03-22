@@ -4,10 +4,10 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    display: flex;
+    /*display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-around;*/
     box-sizing: border-box;
     background: linear-gradient(to bottom right, rgb(135, 169, 207), white);
 }
@@ -98,7 +98,7 @@ body {
 }
 
 .container{
-width: 900px;
+/*width: 100%;*/
 height: auto;
 display: flex;
 flex-direction: column;
@@ -120,6 +120,13 @@ flex-direction: column;
     border-radius: 30px;
 }
 
+.cardContainer{
+    width: 21.1%;
+    height: 576.8px;
+    display: flex;
+    flex-direction: column;
+}
+
 .item{
     border-top: 3px solid rgb(218, 158, 29);
     border-bottom: 3px solid rgb(218, 158, 29);
@@ -129,8 +136,7 @@ flex-direction: column;
     font-family: 'Work Sans', sans-serif;
     font-size: small;
     text-align: center;
-    width: 21.1%;
-    margin-bottom: 5%;
+    width: 100%;
 }
 
 .item img{
@@ -142,6 +148,20 @@ flex-direction: column;
 .score img{
     width: 12%;
     height: 4Vh;
+}
+
+.description{
+    border-top: 3px solid rgb(218, 158, 29);
+    border-bottom: 3px solid rgb(218, 158, 29);
+    border-radius: 10px;
+    background-color: rgba(250, 250, 250, 0.918);
+    color: rgb(77, 48, 5);
+    font-family: 'Work Sans', sans-serif;
+    font-size: small;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: -455px;
 }
 
 .people{
